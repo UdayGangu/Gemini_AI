@@ -15,6 +15,11 @@
     display: block;
     margin-left: 10px;
     cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menu:hover{
+    transform: scale(1.3);
 }
 
 .sidebar .new_chat{
@@ -63,4 +68,10 @@
 .sidebar .bottom_item{
     padding-right: 10px;
     cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    .sidebar{
+        display: none;
+    }
 }

@@ -31,7 +31,13 @@ const Main = () => {
           </section>
           <section className="result_data">
              <img src="./assets/favicon.png"/>
-             {/* <p dangerouslySetInnerHTML={}></p> */}
+             {loading?
+             <div className="loader">
+              <hr/><hr/><hr/>
+             </div>
+             :
+             <p dangerouslySetInnerHTML={{__html:resultData}}></p>
+              }            
           </section>
         </div>
         :
